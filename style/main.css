@@ -1,0 +1,96 @@
+/*
+CORES 
+#0078BD
+#97c2db
+*/
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1vw;
+}
+
+body {
+    background: linear-gradient(#57c1fe,#b3d1e3);
+    height: 100vh;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    display: inline;
+}
+
+.logo {
+    float: left;
+    margin-left: 25px;
+    margin-top: -10px;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #2a96d5;
+    box-shadow: 0px 0px 8px #486494;
+}
+
+nav ul {
+    float: right;
+    margin-right: 25px;
+    margin-top: 20px;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px;
+    font-size: larger;
+}
+
+.caracter {
+    font-size: 10px;
+    color: #0078BD;
+}
+
+#out {
+    position: absolute;
+    bottom: 15px;
+}
+
+#out > a {
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 800;
+    padding: 7px;
+    color: black;
+    margin: 10px;
+    background-color: rgb(236, 109, 84);
+}
+
+#vanta {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 900px) {
+    * {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 450px) {
+    * {
+        font-size: 4vw;
+    }
+}
+
+.header {
+    z-index: 1;
+}
+
+@keyframes mov1 {
+    10%{translate: 20vw;}
+}

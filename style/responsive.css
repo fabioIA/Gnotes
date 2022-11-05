@@ -1,0 +1,60 @@
+.menu-icone {
+    display: none;
+  }
+  
+  #menuAlternar {
+    display: none;
+  }
+@media(max-width: 375px) {
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #97c2db;
+  }
+
+  .menu-icone {
+    display: inline;
+    color: #0078BD;
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    z-index: 999;
+    /*o icone vai sobrepor a ul e assim podeos ve-lo e clica-lo*/
+  }
+
+  .menu-icone i {
+    font-size: 40px;
+  }
+
+  .header ul {
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    /*itens vao ficar quebrados em multiplas linhas*/
+    align-content: center;
+    top: -20px;
+    right: -30px;
+    width: 40%;
+    height: 0%;
+    /*tamanho 0 pq é pra sumir qnd n tiver checkado*/
+    background-color: #0078BD;
+    overflow: hidden;
+    /*vai esconder conteudo quando nao tiver checkado*/
+  }
+
+  .header li {
+    display: block;
+    width: 100%;
+    font-size: 10px;
+    margin-top: 5px;
+  }
+
+  .header li a {
+    width: 100%;
+  }
+
+  #menuAlternar:checked~ul {
+    height: 30%;
+    /*tamanho quando tiver checkado*/
+  }
+}
